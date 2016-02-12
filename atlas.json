@@ -1,0 +1,52 @@
+{
+  "branch": "master",
+  "files": [
+    "index.ipynb"
+  ],
+  "formats": {
+    "pdf": {
+      "version": "web",
+      "toc": true,
+      "index": true,
+      "syntaxhighlighting": true,
+      "show_comments": false,
+      "color_count": false,
+      "trim_size": false
+    },
+    "epub": {
+      "toc": true,
+      "index": true,
+      "syntaxhighlighting": true,
+      "epubcheck": true,
+      "show_comments": false,
+      "downsample_images": false
+    },
+    "mobi": {
+      "toc": true,
+      "index": true,
+      "syntaxhighlighting": true,
+      "show_comments": false,
+      "downsample_images": false
+    },
+    "html": {
+      "toc": false,
+      "index": false,
+      "syntaxhighlighting": false,
+      "show_comments": false,
+      "consolidated": false,
+      "fragment" : false,
+      "demote" : true,
+      "additionalElementsToId" : "p:not([id]), pre:not([id]), ul:not([id]), li:not([id]), a:not([id])",
+      "javascripts" : ["assets/video/video.js","assets/lander/lander.js"],
+      "stylesheets" : ["assets/video/video-js.css","assets/lander/lander.css"]
+    }
+  },
+  "theme": "",
+  "title": "Atlas Lander Skeleton",
+  "print_isbn13": "",
+  "lang": "en",
+  "templating": true,
+  "server_url" : "",
+  "video_url" : "",
+  "poster_url" : ""
+}

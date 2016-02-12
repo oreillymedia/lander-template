@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+
+    {% if title %}
+    <title>{{ title }} - {{ label }}</title>
+    {% else %}
+    <title>{{ label }}</title>
+    {% endif %}
+
+    {{ header }}
+
+  </head>
+  <body data-type="book">
+    {{ content }}
+
+    <script type="text/javascript">
+
+    var thebe;
+      $(function(){
+          thebe = new Thebe({
+            url: "{{ server_url }}",
+            tmpnb_mode: true,
+            append_kernel_controls_to: 'body'
+          });
+          $('section[data-type=chapter]').addClass('page');
+          // hacky way to set cm to our theme
+          $('.CodeMirror.cm-s-default').removeClass('cm-s-default').addClass('cm-s-oreilly');
+
+          opt = {
+            duration: [14, 43],
+            debug: false,
+            cues: "cues.json",
+            dimensions: [854, 480],
+            volume: 0.8,
+            poster: "{{ poster_url }}",
+            videojs_options: {
+              "techOrder": ["youtube"],
+              "src": "{{ video_url }}"}
+          };
+
+          lander = new Lander( opt, tempData);
+          window.lander = lander;
+
+          thebe.events.on("output_message.OutputArea", function(){
+            lander.dom_changed()
+          });
+
+      });
+    </script>
+  </body>
+</html>
