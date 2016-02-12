@@ -37,8 +37,15 @@
       "fragment" : false,
       "demote" : true,
       "additionalElementsToId" : "p:not([id]), pre:not([id]), ul:not([id]), li:not([id]), a:not([id])",
-      "javascripts" : ["assets/video/video.js","assets/lander/lander.js"],
-      "stylesheets" : ["assets/video/video-js.css","assets/lander/lander.css"]
+      "javascripts" : [
+          "https://vjs.zencdn.net/5.0/video-js.min.js",
+          "http://cdn.jupyter.org/thebe/notebook4.1.0/ipywidgets4.0.3/static/main-built.js",
+          "http://cdn-origin.oreilly.com/oreilly/scripts/lander/lander.js"
+      ],
+      "stylesheets" : [
+        "https://vjs.zencdn.net/5.0/video-js.min.css",
+        "http://cdn-origin.oreilly.com/oreilly/scripts/lander/lander.css"
+      ]
     }
   },
   "theme": "",
