@@ -8,6 +8,10 @@ When creating a [new project](https://atlas.oreilly.com/new):
 * Select `Custom`
 * Fill in the git url as: https://github.com/oreillymedia/lander-template.git
 
+## Theme
+
+This template uses the `oreillymedia/lander-theme` at https://atlas.oreilly.com/oreillymedia/lander-theme
+
 ## Ipython
 
 * Upload / commit a `index.ipynb` file
@@ -20,9 +24,9 @@ In `atlas.json`:
 * Change `server_url` to point to a tempnb server
 * Change `video_url` to point to a youtube video
 * Change `poster_url` to point to a local image file (`assets/poster.png`) or to an absolute url
+* Change `cues_url` to point to a local image file (`assets/cues.json`) or to an absolute url
 
 ## Lander
-
 
 This template links directly to remote versions of the js libraries it requires.
 
@@ -30,13 +34,13 @@ You can change these by adjusting changing the following in `atlas.json`:
 
 ```json
 "javascripts" : [
-    "https://vjs.zencdn.net/5.0/video-js.min.css",
-    "http://cdn.jupyter.org/thebe/notebook4.1.0/ipywidgets4.0.3/static/main-built.js",
-    "http://cdn-origin.oreilly.com/oreilly/scripts/lander/lander.js"
+  "https://cdn.oreillystatic.com/oreilly/scripts/lander/video.js",
+  "https://cdn.oreillystatic.com/oreilly/scripts/lander/thebe.js",
+  "https://cdn.oreillystatic.com/oreilly/scripts/lander/lander.js"
 ],
 "stylesheets" : [
-  "https://vjs.zencdn.net/5.0/video-js.min.css",
-  "http://cdn-origin.oreilly.com/oreilly/scripts/lander/lander.css"
+  "https://cdn.oreillystatic.com/oreilly/scripts/lander/video-js.css",
+  "https://cdn.oreillystatic.com/oreilly/scripts/lander/lander.css"
 ]
 ```
 

@@ -38,22 +38,23 @@
       "demote" : true,
       "additionalElementsToId" : "p:not([id]), pre:not([id]), ul:not([id]), li:not([id]), a:not([id])",
       "javascripts" : [
-          "https://vjs.zencdn.net/5.0/video-js.min.js",
-          "http://cdn.jupyter.org/thebe/notebook4.1.0/ipywidgets4.0.3/static/main-built.js",
-          "http://cdn-origin.oreilly.com/oreilly/scripts/lander/lander.js"
+        "https://cdn.oreillystatic.com/oreilly/scripts/lander/video.js",
+        "https://cdn.oreillystatic.com/oreilly/scripts/lander/thebe.js",
+        "https://cdn.oreillystatic.com/oreilly/scripts/lander/lander.js"
       ],
       "stylesheets" : [
-        "https://vjs.zencdn.net/5.0/video-js.min.css",
-        "http://cdn-origin.oreilly.com/oreilly/scripts/lander/lander.css"
+        "https://cdn.oreillystatic.com/oreilly/scripts/lander/video-js.css",
+        "https://cdn.oreillystatic.com/oreilly/scripts/lander/lander.css"
       ]
     }
   },
-  "theme": "",
+  "theme": "oreillymedia/lander-theme",
   "title": "Atlas Lander Skeleton",
   "print_isbn13": "",
   "lang": "en",
   "templating": true,
   "server_url" : "",
   "video_url" : "",
-  "poster_url" : ""
+  "poster_url" : "poster.png",
+  "cues_url" : "cues.json"
 }
